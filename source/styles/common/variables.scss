@@ -1,1 +1,18 @@
-/* здесь используйте глобальные переменные */
+/* Fonts */
+$primary-font: "Oswald-Regular", "Arial", sans-serif;
+$secondary-font: "Oswald-Bold", "Arial", sans-serif;
+$third-font: "Ubuntu-Regular", "Arial", sans-serif;
+$fourth-font: "Montserrat-Medium", "Arial", sans-serif;
+
+// Viewports
+$mobile-width: 375px;
+$tablet-width: 834px;
+$desktop-width: 1920px;
+
+
+/* Colors */
+$basic-text: #ffffff;
+$accent-text: #ffdf8e;
+$accent-background-button: #39dd00;
+$background-button: #aa38b4;
+$background-dark: #b6b6b6;
