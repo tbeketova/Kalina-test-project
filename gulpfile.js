@@ -15,6 +15,9 @@ import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import server from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
+import imageSize from 'image-size';
+import through2 from 'through2';
+import path from 'path';
 
 const { src, dest, watch, series, parallel } = gulp;
 const sass = gulpSass(dartSass);
@@ -96,17 +99,20 @@ export function optimizeRaster () {
 
   function createOptionsFormat() {
     const formats = [];
+    const MAX_SIZE = 16383;
 
     for (const format of TARGET_FORMATS) {
       for (let density = RAW_DENSITY; density > 0; density--) {
-        formats.push(
-          {
-            format,
-            rename: { suffix: `@${density}x` },
-            width: ({ width }) => Math.ceil(width * density / RAW_DENSITY),
-            jpegOptions: { progressive: true },
+        formats.push({
+          format,
+          rename: { suffix: `@${density}x` },
+          width: ({ width }) => {
+            const targetWidth = Math.ceil(width * density / RAW_DENSITY);
+            return targetWidth > MAX_SIZE ? MAX_SIZE : targetWidth;
           },
-        );
+          jpegOptions: { progressive: true },
+          webpOptions: { quality: 85 },
+        });
       }
     }
 
@@ -116,6 +122,27 @@ export function optimizeRaster () {
   return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
     .pipe(sharp(createOptionsFormat()))
     .pipe(dest(`${PATH_TO_SOURCE}images`));
+}
+
+
+export function findBigImages() {
+  const MAX_DIMENSION = 8000; // можно изменить на 10000 или 16383 по необходимости
+
+  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
+    .pipe(through2.obj(function (file, _, cb) {
+      if (!file.isBuffer()) {
+        cb(null, file);
+        return;
+      }
+
+      const dimensions = imageSize(file.contents);
+
+      if (dimensions.width > MAX_DIMENSION || dimensions.height > MAX_DIMENSION) {
+        console.log(`⚠️  [BIG IMAGE]: ${path.relative(process.cwd(), file.path)} - ${dimensions.width}x${dimensions.height}px`);
+      }
+
+      cb(null, file);
+    }));
 }
 
 export function optimizeVector () {

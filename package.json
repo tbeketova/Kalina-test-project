@@ -1,6 +1,6 @@
 {
   "name": "Kalina-test-project",
-  "version": "1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -26,7 +26,8 @@
     "lint:scripts": "eslint . --ignore-path .gitignore --ignore-pattern vendor/",
     "optimize": "npm-run-all -p optimize:**",
     "optimize:raster": "gulp optimizeRaster",
-    "optimize:vector": "gulp optimizeVector"
+    "optimize:vector": "gulp optimizeVector",
+    "find:big": "gulp findBigImages"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
@@ -43,6 +44,8 @@
     "gulp-postcss": "10.0.0",
     "gulp-sass": "5.1.0",
     "gulp-sharp-responsive": "0.4.1",
+    "image-size": "1.0.2",
+    "through2": "4.0.2",
     "gulp-stacksvg": "4.0.0",
     "gulp-svgmin": "4.1.0",
     "linthtml-config-htmlacademy": "1.0.25",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,10 +17,410 @@
     <title>Kalina-test-project</title>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="container">
+        <picture class="headerl__picture">
+          <source media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="/images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Logotype Kalina casino">
+        </picture>
+        <button>Open menu</button>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Check</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Diagramme</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <h1>Страница для старта</h1>
+      <div class="page__wrapper">
+        <div class="container">
+          <h1 class="visually-hidden">Kalina casino</h1>
+          <section class="promo promo--strawberry">
+            <h2 class="promo__title">Quisque luctus varius massa</h2>
+            <p class="promo__subtitle">Aliquam consectetur</p>
+            <a class="promo__button" href="#">Solosidi Sem</a>
+          </section>
+          <section class="about">
+            <h2>Neque porro quisquam: Kalina</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend. Fusce cursus sed dui et volutpat. Donec suscipit sodales arcu, eu aliquam lectus convallis eget. Sed luctus nec tellus at luctus. Aliquam purus orci, cursus sed hendrerit sit amet, tincidunt eget nibh. Proin pulvinar nunc id tortor feugiat eleifend. Quisque nec consectetur leo, et blandit nisi. Maecenas ac libero eget elit gravida blandit. Vivamus tempor imperdiet nisl a vestibulum. Duis gravida sodales nisi nec pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend.</p>
+            <div class="">
+              <span>Youtube</span>
+            </div>
+          </section>
+          <section class="slider-small">
+            <picture class="slider-small__picture">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
+              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
+              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
+              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
+              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+            </picture>
+            <button class="back" id="back-button" type="button">Back</button>
+            <button class="next" id="next-button" type="button">Next</button>
+          </section>
+          <section class="features-one features">
+            <h2 class="features__title">Aenean lacus mi efficitur in venenatis</h2>
+            <p class="features__description">Venenatis:</p>
+            <ul class="features__list">
+              <li class="features__item">Quisque luctus varius massa, in gravida arcu condimentum in. Vivamus auctor eleifend metus, ac efficitur metus tempor ullamcorper. Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
+              <li class="features__item">Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet. Ut ut risus in erat iaculis porta ac vitae elit. Proin et felis eget risus venenatis lobortis. Duis rutrum orci ac placerat rhoncus.</li>
+              <li class="features__item">Quisque nec ligula sodales, mattis mauris sit amet, ullamcorper lorem. Integer hendrerit, mi non luctus pulvinar, eros nunc tristique mi, nec placerat urna lacus ut justo. Donec vitae sapien sed lorem venenatis aliquet.</li>
+              <li class="features__item">Ut cursus imperdiet mi, id pellentesque arcu cursus at. Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet.</li>
+              <li class="features__item">Aliquam ut lorem augue. Vestibulum quis ullamcorper leo, ac maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+              <li class="features__item">Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
+            </ul>
+          </section>
+          <section class="slider-horizontal">
+            <picture class="slider-horizontal__picture">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
+              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
+              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
+              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
+              <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+            </picture>
+            <button class="back" id="back-button" type="button">Back</button>
+            <button class="next" id="next-button" type="button">Next</button>
+          </section>
+          <section class="features-two features">
+            <h2 class="features__title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
+            <p class="features__description">Proin tempus odio vitae lorem imperdiet, venenatis fermentum ex malesuada. Donec justo lacus, rutrum sed viverra at, dignissim sit amet enim. Sed id tortor nibh:</p>
+            <ul class="features__list">
+              <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
+              <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
+            </ul>
+            <p class="features__description">Mauris sit amet augue efficitur, posuere massa vitae, tempus libero.</p>
+            <ul class="features__list">
+              <li class="features__item">Aliquam erat volutpat. Sed ex ipsum, mattis non pellentesque at, efficitur at eros. Integer porttitor tincidunt mi sit amet ornare.</li>
+              <li class="features__item">Proin posuere dolor quis lacus feugiat blandit. Vivamus vitae orci in ante malesuada commodo.</li>
+              <li class="features__item">Nam nec bibendum metus, id cursus arcu. Curabitur vel pharetra metus, interdum egestas nulla.</li>
+              <li class="features__item">Sed ipsum lacus, auctor vel nisi et, interdum rhoncus nunc. Mauris ultricies ante sit amet ex imperdiet efficitur.</li>
+              <li class="features__item">Fusce sed odio posuere, laoreet orci ac, rutrum nisl. Sed vel molestie neque, aliquam cursus turpis!</li>
+            </ul>
+          </section>
+          <section class="promo promo--totem">
+            <h2 class="promo__title">Sed at ex eu velit faucibus</h2>
+            <p class="promo__subtitle">Nullam pulvinar suscipit est, vel vulputate</p>
+            <a class="promo__button" href="#">Solosidi Sem</a>
+          </section>
+          <section class="features-three features">
+            <h2 class="features__title">Donec mi ex efficitur fringilla laoreet eget</h2>
+            <p class="features__description">Maecenas convallis pulvinar eros, vitae dictum lacus pellentesque vel. Integer faucibus commodo neque, in pretium mauris accumsan in. Sed sed felis in nunc faucibus maximus. Integer mollis facilisis nunc ut hendrerit. Donec ante metus, tristique non consectetur id, commodo eget dolor.</p>
+            <ul class="features__list">
+              <li class="features__item">Aenean ac vehicula libero. Curabitur faucibus velit quam, ut volutpat enim finibus in. Nam ultrices fermentum ultrices. Sed leo tellus, pellentesque hendrerit imperdiet et, viverra ut nunc. Donec lobortis vitae mauris vitae pretium. Donec mi ex, efficitur fringilla laoreet eget, aliquam vel quam.</li>
+              <li class="features__item">Integer faucibus commodo neque, in pretium mauris accumsan in. Sed sed felis in nunc faucibus maximus.</li>
+              <li class="features__item">Morbi nec quam lacus. Maecenas convallis pulvinar eros, vitae dictum lacus pellentesque vel.</li>
+            </ul>
+            <p class="features__description">Aliquam id porttitor:</p>
+            <ul class="features__list">
+              <li class="features__item">Praesent mauris ipsum, aliquam a justo nec, sodales vulputate sem. Nullam ac ante leo. Fusce viverra lectus dignissim condimentum hendrerit.</li>
+              <li class="features__item">Sed quis enim in dui congue eleifend. Nunc interdum risus sit amet scelerisque eleifend. Pellentesque erat diam, mattis a felis in, finibus consectetur elit. Donec semper sed vestibulum.</li>
+              <li class="features__item">Mauris molestie, velit nec semper tincidunt, magna diam blandit quam, vitae pharetra sapien dui at justo. Nulla in nisi nulla. Aenean pulvinar pulvinar scelerisque.</li>
+              <li class="features__item">Vivamus condimentum ullamcorper ipsum, ac elementum justo semper eget. Pellentesque luctus at ex ut hendrerit. Proin bibendum faucibus lacinia. Aenean quis ex ac risus lobortis interdum sit amet nec quam. Integer consectetur mi nunc, et vestibulum metus tempor ac.</li>
+            </ul>
+          </section>
+          <section class="slider-small">
+            <picture class="slider-small__picture">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
+              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
+              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
+              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
+              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+            </picture>
+            <button class="back" id="back-button" type="button">Back</button>
+            <button class="next" id="next-button" type="button">Next</button>
+          </section>
+          <section class="features-four features">
+            <h2 class="features__title">Vestibulum vitae enim tellus</h2>
+            <p class="features__description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="features__list">
+              <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
+              <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
+            </ul>
+          </section>
+          <section class="slider-vertical">
+            <picture class="slider-horizontal__picture">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
+              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
+              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
+              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
+              <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+            </picture>
+            <button class="back" id="back-button" type="button">Back</button>
+            <button class="next" id="next-button" type="button">Next</button>
+          </section>
+          <section class="features-four features">
+            <h2 class="features__title">Vestibulum vitae enim tellus</h2>
+            <p class="features__description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="features__list">
+              <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
+              <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
+            </ul>
+          </section>
+          <section class="promo promo--money">
+            <h2 class="promo__title">Maecenas ex diameget eget</h2>
+            <a class="promo__button" href="#">Solosidi Sem</a>
+          </section>
+          <section class="reviews">
+            <div class="reviews__head">
+              <h2>Mauris in metus luctus️
+                <span>*Nulla in ultricies lorem</span>
+              </h2>
+              <div class="star">
+                <span>5 stars</span>
+              </div>
+              <div class="">
+                <p>Quisque luctus</p>
+                <select name="" id="">
+                  <option value="">Nunc</option>
+                  <option value="">Popular</option>
+                  <option value="">New</option>
+                </select>
+              </div>
+            </div>
+            <div class="reviews__body"></div>
+            <div class="reviews__form"></div>
+          </section>
+        </div>
+      </div>
     </main>
-    <footer class="footer">565</footer>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="visually-hidden">Links</h2>
+        <div class="footer__wrapper-links">
+          <details>
+            <summary>Lorem Ipsum</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ut vitae</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Interdum</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#">Nullam</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Mauris</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Fusce</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Aliquam</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Curabitur non</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Fermentum</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Viverra sapien</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Cras porta</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#">Malesuada</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Quisque nec</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Etiam at porta</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Aliquam</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Curabitur non</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Fermentum</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Viverra sapien</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Viverra sapien</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Duis semper</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ut vitae</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Cras dignissim</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ut vitae</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Aliquam</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Curabitur non</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Fermentum</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Viverra sapien</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Viverra sapien</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Lorem ipsum dolor</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ut vitae</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Duis Minar</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Pellentesque</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Ut vitae</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sitemap</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Aliquam</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Donec Nunc</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Nulla Facilisi</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Vinamus Ornare</summary>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Nam sit</a>
+              </li>
+            </ul>
+          </details>
+        </div>
+        <ul class="footer__partners">
+          <li>
+            <img src="" alt="Logo 1" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 2" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 3" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 4" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 5" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 6" width="" height="">
+          </li>
+          <li>
+            <img src="" alt="Logo 7">
+          </li>
+        </ul>
+        <p>Nam euismod, lacus nec commodo commodo, tortor lacus laoreet enim, eget congue velit neque vel urna.</p>
+        <p>Curabitur sit amet erat id leo porttitor ultricies.</p>
+      </div>
+    </footer>
   </body>
 </html>
