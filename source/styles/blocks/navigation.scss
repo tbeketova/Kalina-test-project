@@ -1,0 +1,20 @@
+.navigation {
+  position: relative;
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #B72D93;
+  }
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+}
+
+.navigation--opened .navigation__list {
+  display: block;
+  position: absolute;
+  top: 38px;
+}

@@ -1,0 +1,36 @@
+.slider-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  &__button {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 39px;
+      height: 39px;
+      background-image: url("../../images/arrow-btn-slider@2x.png");
+      background-repeat: no-repeat;
+      background-size: 39px 39px;
+      box-shadow: inset 2px 2px 10px 0 rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+  }
+
+  &__button--next {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

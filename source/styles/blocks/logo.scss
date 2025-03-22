@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  gap: 5px;
+
+  picture {
+    display: block;
+    width: 22px;
+    height: 23px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+
+    picture {
+      display: block;
+      width: 37px;
+      height: 10px;
+    }
+  }
+}

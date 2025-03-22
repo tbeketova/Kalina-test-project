@@ -1,0 +1,51 @@
+.toggle {
+  width: 27px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  &::before,
+  &::after,
+  span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 27px;
+    height: 6px;
+    background-color: rgb(213, 54, 255);
+    border: 2px solid $black-color;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  span {
+    top: 8px;
+  }
+
+  &::after {
+    top: 16px;
+  }
+}
+
+.toggle:hover {
+  opacity: 0.5;
+}
+
+.navigation--opened .toggle::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navigation--opened .toggle::after {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.navigation--opened .toggle span {
+  opacity: 0;
+}

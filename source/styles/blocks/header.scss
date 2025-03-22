@@ -1,3 +1,18 @@
 .header {
-  
+  padding: 10px 0;
+  /* background-image: url("../../images/background-page/background-header-mobile@2x.webp");
+  background-repeat: no-repeat; */
+  /* background: linear-gradient(90deg, #391059 0%, #49206A 50%, #5E2F8D 100%); */
+  background: linear-gradient(90deg, #4d1e70 40%, #49368e 80%);
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    order: -1;
+  }
 }

@@ -19,25 +19,49 @@
   <body class="page__body">
     <header class="header">
       <div class="container">
-        <picture class="headerl__picture">
-          <source media="(min-width: 1440px)" srcset="/images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="/images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Logotype Kalina casino">
-        </picture>
-        <button>Open menu</button>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Check</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Diagramme</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__wrapper">
+          <a href="#">
+            <div class="header__logo logo">
+              <picture class="logo__picture">
+                <source type="image/webp" media="(min-width: 834px)" srcset="/images/logo/logo-tablet-desktop@1x.webp 1x, /images/logo/logo-tablet-desktop@2x.webp 2x" width="34" height="37">
+                <source type="image/webp" srcset="/images/logo/logo-mobile@1x.webp 1x, /images/logo/logo-mobile@2x.webp 2x" width="22" height="23">
+                <source type="image/png" media="(min-width: 834px)" srcset="/images/logo/logo-tablet-desktop@1x.png 1x, /images/logo/logo-tablet-desktop@2x.png 2x" width="34" height="37">
+                <img class="logo__img" src="/images/logo/logo-mobile@1x.png" srcset="/images/logo/logo-mobile@2x.png 2x" width="22" height="23" alt="Logotype Kalina casino">
+              </picture>
+              <div class="logo__text-box">
+                <picture class="">
+                  <source media="(min-width: 834px)" srcset="/images/logo/logo-KALINA.svg" width="58" height="11" type="image/svg+xml">
+                  <img class="" src="/images/logo/logo-KALINA.svg" width="37" height="7" alt="Logotype Kalina casino">
+                </picture>
+                <picture class="">
+                  <source media="(min-width: 834px)" srcset="/images/logo/logo-CASINO.svg" width="58" height="11" type="image/svg+xml">
+                  <img class="" src="/images/logo/logo-CASINO.svg" width="37" height="7" alt="Logotype Kalina casino">
+                </picture>
+                <picture class="">
+                  <source media="(min-width: 834px)" srcset="/images/logo/logo-Review.svg" width="36" height="7" type="image/svg+xml">
+                  <img class="" src="/images/logo/logo-Review.svg" width="23" height="5        " alt="Logotype Kalina casino">
+                </picture>
+              </div>
+            </div>  
+          </a>
+          <nav class="header__nav navigation navigation--opened">
+            <button class="navigation__button toggle" type="button">
+              <span></span>
+              <span class="visually-hidden">Open menu</span>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Check</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Diagramme</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -57,16 +81,32 @@
             </div>
           </section>
           <section class="slider-small">
-            <picture class="slider-small__picture">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
-              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
-              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
-              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
-              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
-            </picture>
-            <button class="back" id="back-button" type="button">Back</button>
-            <button class="next" id="next-button" type="button">Next</button>
+            <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" width="107" height="146" alt="Mountain">
+            <img src="/images/slider-small/slide-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <img src="/images/slider-small/slide-rainbow-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <img src="/images/slider-small/slide-sky-tablet@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <img src="/images/slider-small/slide-white-mountain-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <img src="/images/slider-small/slide-lake-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+            <!-- <picture class="slider-small__picture">
+              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="180" height="240">
+              <source type="image/webp" srcset="/images/slider-small/slide-mountain-mobile@1x.webp 1x, /images/slider-small/slider_white_mobile@2x.webp 2x" width="107" height="146">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-small/slide-mountain-desktop@1x.jpeg 1x, /images/slider-small/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.jpeg 1x, /images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="180" height="240">
+              <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" srcset="/images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Mountain">
+            </picture> -->
+            <div class="slider-small__button-box slider-buttons">
+              <button class="slider-buttons__button" id="back-button" type="button">
+                <span class="visually-hidden">Back</span>
+                <!-- <svg width="39" height="39" aria-hidden="true">
+                  <use href="/icons/stack.svg#arrow-links"></use>
+                </svg> -->
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </section>
           <section class="features-one features">
             <h2 class="features__title">Aenean lacus mi efficitur in venenatis</h2>
