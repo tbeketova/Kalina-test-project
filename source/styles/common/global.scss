@@ -12,6 +12,13 @@ img {
   object-fit: contain;
 }
 
+@font-face {
+  font-family: "Оsw";
+  src: url("../fonts/Oswald-Regular.ttf") format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .page {
   height: 100%;
 }
@@ -22,12 +29,12 @@ img {
   height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  font-family: $primary-font;
+  /* font-family: "Osw"; */
   color: $basic-text;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  background-color: rgb(91, 7, 91);
+  /* background-color: rgb(91, 7, 91); */
   position: relative;
 
   &::before {
@@ -62,6 +69,46 @@ img {
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
+  }
+}
+
+.content-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.content-description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.content-list {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+
+  li {
+    padding-left: 10px;
+    position: relative;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8%;
+    left: 0;
+    border-radius: 50%;
+    background-color: $basic-text;
   }
 }
 

@@ -1,21 +1,22 @@
 /* Fonts */
 $primary-font: "Oswald-Regular", "Arial", sans-serif;
-$secondary-font: "Oswald-Bold", "Arial", sans-serif;
+$secondary-font: "Oswald-Bold";
 $third-font: "Ubuntu-Regular", "Arial", sans-serif;
 $fourth-font: "Montserrat-Medium", "Arial", sans-serif;
 
 // Viewports
 $mobile-width: 375px;
 $tablet-width: 834px;
+$desktop-mini-width: 1024px;
 $desktop-width: 1920px;
 
 
 /* Colors */
 $basic-text: #ffffff;
 $accent-text: #ffdf8e;
+$color-text: #d536ff;
 $accent-background-button: #39dd00;
 $background-button: #aa38b4;
 $background-dark: #b6b6b6;
-$burger-menu-button: #d536ff;
 $burger-menu-stroke: #3c004c;
 $black-color: #000000;

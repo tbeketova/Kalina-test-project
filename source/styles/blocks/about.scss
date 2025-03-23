@@ -1,0 +1,15 @@
+.about {
+  &__title {
+    margin: 0 0 15px;
+  }
+
+  &__description {
+    margin: 0 0 30px;
+  }
+
+  &__video {
+    height: 180px;
+    border: 3px solid $black-color;
+    margin-bottom: 30px;
+  }
+}

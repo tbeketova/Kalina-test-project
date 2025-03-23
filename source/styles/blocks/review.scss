@@ -1,0 +1,41 @@
+.review {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: lowercase;
+
+  &__image {
+    width: 42px;
+    height: 42px;
+  }
+
+  &__user-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+
+  &__date {
+    margin: 0;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    color: $background-dark;
+  }
+
+  &__content,
+  &__like,
+  &__comment {
+    margin: 0;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+
+  &__like {
+    color: $background-dark;
+  }
+
+  &__comment {
+    color: $background-dark;
+  }
+}

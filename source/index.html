@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
     <title>Kalina-test-project</title>
@@ -44,7 +49,7 @@
               </div>
             </div>  
           </a>
-          <nav class="header__nav navigation navigation--opened">
+          <nav class="header__nav navigation navigation--closed">
             <button class="navigation__button toggle" type="button">
               <span></span>
               <span class="visually-hidden">Open menu</span>
@@ -69,14 +74,16 @@
         <div class="container">
           <h1 class="visually-hidden">Kalina casino</h1>
           <section class="promo promo--strawberry">
-            <h2 class="promo__title">Quisque luctus varius massa</h2>
-            <p class="promo__subtitle">Aliquam consectetur</p>
-            <a class="promo__button" href="#">Solosidi Sem</a>
+            <div class="promo__box">
+              <h2 class="promo__title content-title">Quisque luctus varius massa</h2>
+              <p class="promo__subtitle content-subtitle">Aliquam consectetur</p>
+              <a class="promo__button" href="#">Solosidi Sem</a>
+            </div>
           </section>
           <section class="about">
-            <h2>Neque porro quisquam: Kalina</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend. Fusce cursus sed dui et volutpat. Donec suscipit sodales arcu, eu aliquam lectus convallis eget. Sed luctus nec tellus at luctus. Aliquam purus orci, cursus sed hendrerit sit amet, tincidunt eget nibh. Proin pulvinar nunc id tortor feugiat eleifend. Quisque nec consectetur leo, et blandit nisi. Maecenas ac libero eget elit gravida blandit. Vivamus tempor imperdiet nisl a vestibulum. Duis gravida sodales nisi nec pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend.</p>
-            <div class="">
+            <h2 class="about__title content-title">Neque porro quisquam: Kalina</h2>
+            <p class="about__description content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend. Fusce cursus sed dui et volutpat. Donec suscipit sodales arcu, eu aliquam lectus convallis eget. Sed luctus nec tellus at luctus. Aliquam purus orci, cursus sed hendrerit sit amet, tincidunt eget nibh. Proin pulvinar nunc id tortor feugiat eleifend. Quisque nec consectetur leo, et blandit nisi. Maecenas ac libero eget elit gravida blandit. Vivamus tempor imperdiet nisl a vestibulum. Duis gravida sodales nisi nec pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend.</p>
+            <div class="about__video">
               <span>Youtube</span>
             </div>
           </section>
@@ -109,9 +116,9 @@
             </div>
           </section>
           <section class="features-one features">
-            <h2 class="features__title">Aenean lacus mi efficitur in venenatis</h2>
-            <p class="features__description">Venenatis:</p>
-            <ul class="features__list">
+            <h2 class="features__title content-title">Aenean lacus mi efficitur in venenatis</h2>
+            <p class="features__description content-description">Venenatis:</p>
+            <ul class="features__list content-list">
               <li class="features__item">Quisque luctus varius massa, in gravida arcu condimentum in. Vivamus auctor eleifend metus, ac efficitur metus tempor ullamcorper. Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
               <li class="features__item">Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet. Ut ut risus in erat iaculis porta ac vitae elit. Proin et felis eget risus venenatis lobortis. Duis rutrum orci ac placerat rhoncus.</li>
               <li class="features__item">Quisque nec ligula sodales, mattis mauris sit amet, ullamcorper lorem. Integer hendrerit, mi non luctus pulvinar, eros nunc tristique mi, nec placerat urna lacus ut justo. Donec vitae sapien sed lorem venenatis aliquet.</li>
@@ -133,14 +140,14 @@
             <button class="next" id="next-button" type="button">Next</button>
           </section>
           <section class="features-two features">
-            <h2 class="features__title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
-            <p class="features__description">Proin tempus odio vitae lorem imperdiet, venenatis fermentum ex malesuada. Donec justo lacus, rutrum sed viverra at, dignissim sit amet enim. Sed id tortor nibh:</p>
-            <ul class="features__list">
+            <h2 class="features__title content-title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
+            <p class="features__description content-description">Proin tempus odio vitae lorem imperdiet, venenatis fermentum ex malesuada. Donec justo lacus, rutrum sed viverra at, dignissim sit amet enim. Sed id tortor nibh:</p>
+            <ul class="features__list content-list">
               <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
               <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
             </ul>
-            <p class="features__description">Mauris sit amet augue efficitur, posuere massa vitae, tempus libero.</p>
-            <ul class="features__list">
+            <p class="features__description content-description">Mauris sit amet augue efficitur, posuere massa vitae, tempus libero.</p>
+            <ul class="features__list content-list">
               <li class="features__item">Aliquam erat volutpat. Sed ex ipsum, mattis non pellentesque at, efficitur at eros. Integer porttitor tincidunt mi sit amet ornare.</li>
               <li class="features__item">Proin posuere dolor quis lacus feugiat blandit. Vivamus vitae orci in ante malesuada commodo.</li>
               <li class="features__item">Nam nec bibendum metus, id cursus arcu. Curabitur vel pharetra metus, interdum egestas nulla.</li>
@@ -154,15 +161,15 @@
             <a class="promo__button" href="#">Solosidi Sem</a>
           </section>
           <section class="features-three features">
-            <h2 class="features__title">Donec mi ex efficitur fringilla laoreet eget</h2>
-            <p class="features__description">Maecenas convallis pulvinar eros, vitae dictum lacus pellentesque vel. Integer faucibus commodo neque, in pretium mauris accumsan in. Sed sed felis in nunc faucibus maximus. Integer mollis facilisis nunc ut hendrerit. Donec ante metus, tristique non consectetur id, commodo eget dolor.</p>
-            <ul class="features__list">
+            <h2 class="features__title content-title">Donec mi ex efficitur fringilla laoreet eget</h2>
+            <p class="features__description content-description">Maecenas convallis pulvinar eros, vitae dictum lacus pellentesque vel. Integer faucibus commodo neque, in pretium mauris accumsan in. Sed sed felis in nunc faucibus maximus. Integer mollis facilisis nunc ut hendrerit. Donec ante metus, tristique non consectetur id, commodo eget dolor.</p>
+            <ul class="features__list content-list">
               <li class="features__item">Aenean ac vehicula libero. Curabitur faucibus velit quam, ut volutpat enim finibus in. Nam ultrices fermentum ultrices. Sed leo tellus, pellentesque hendrerit imperdiet et, viverra ut nunc. Donec lobortis vitae mauris vitae pretium. Donec mi ex, efficitur fringilla laoreet eget, aliquam vel quam.</li>
               <li class="features__item">Integer faucibus commodo neque, in pretium mauris accumsan in. Sed sed felis in nunc faucibus maximus.</li>
               <li class="features__item">Morbi nec quam lacus. Maecenas convallis pulvinar eros, vitae dictum lacus pellentesque vel.</li>
             </ul>
-            <p class="features__description">Aliquam id porttitor:</p>
-            <ul class="features__list">
+            <p class="features__description content-description">Aliquam id porttitor:</p>
+            <ul class="features__list content-list">
               <li class="features__item">Praesent mauris ipsum, aliquam a justo nec, sodales vulputate sem. Nullam ac ante leo. Fusce viverra lectus dignissim condimentum hendrerit.</li>
               <li class="features__item">Sed quis enim in dui congue eleifend. Nunc interdum risus sit amet scelerisque eleifend. Pellentesque erat diam, mattis a felis in, finibus consectetur elit. Donec semper sed vestibulum.</li>
               <li class="features__item">Mauris molestie, velit nec semper tincidunt, magna diam blandit quam, vitae pharetra sapien dui at justo. Nulla in nisi nulla. Aenean pulvinar pulvinar scelerisque.</li>
@@ -182,9 +189,9 @@
             <button class="next" id="next-button" type="button">Next</button>
           </section>
           <section class="features-four features">
-            <h2 class="features__title">Vestibulum vitae enim tellus</h2>
-            <p class="features__description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="features__list">
+            <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
+            <p class="features__description content-description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="features__list content-list">
               <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
               <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
             </ul>
@@ -202,9 +209,9 @@
             <button class="next" id="next-button" type="button">Next</button>
           </section>
           <section class="features-four features">
-            <h2 class="features__title">Vestibulum vitae enim tellus</h2>
-            <p class="features__description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="features__list">
+            <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
+            <p class="features__description content-description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="features__list content-list">
               <li class="features__item">Sed sed dui sit amet massa fermentum lobortis. Nullam iaculis nisi quis augue sollicitudin, id vestibulum nisl feugiat. Maecenas tempor iaculis lacinia. Quisque in dictum lacus, nec bibendum metus. Sed elit dui, maximus sed ex nec, facilisis lacinia ligula. Fusce ut tellus luctus, iaculis ex eu, lobortis dolor.</li>
               <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
             </ul>
@@ -215,13 +222,13 @@
           </section>
           <section class="reviews">
             <div class="reviews__head">
-              <h2>Mauris in metus luctus️
+              <h2 class="reviews__title">Mauris in Metus luctus️
                 <span>*Nulla in ultricies lorem</span>
               </h2>
-              <div class="star">
+              <div class="reviews__stars stars">
                 <span>5 stars</span>
               </div>
-              <div class="">
+              <div class="reviews__sort">
                 <p>Quisque luctus</p>
                 <select name="" id="">
                   <option value="">Nunc</option>
@@ -230,7 +237,91 @@
                 </select>
               </div>
             </div>
-            <div class="reviews__body"></div>
+            <ul class="reviews__list review">
+                <li class="review__item">
+                  <div class="review__image">
+                    <svg width="42" height="42" aria-hidden="true">
+                      <use href="/icons/stack.svg#avatar"></use>
+                    </svg>
+                  </div>
+                  <p class="review__user-name">Cristopher007</p>
+                  <p class="review__date">04 SEPTEMBER, 2024</p>
+                  <div class="review__stars stars">
+                    <span>4 stars</span>
+                  </div>
+                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
+                  <button class="review__like">hilfreich</button>
+                  <button class="review__comment">Kommentar</button>
+                </li>
+                <li class="review__item">
+                  <svg width="42" height="42" aria-hidden="true">
+                    <use href="/icons/stack.svg#avatar"></use>
+                  </svg>
+                  <p class="review__user-name">Cristopher007</p>
+                  <p class="review__date">04 SEPTEMBER, 2024</p>
+                  <div class="review__stars stars">
+                    <span>4 stars</span>
+                  </div>
+                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
+                  <button class="review__like">hilfreich</button>
+                  <button class="review__comment">Kommentar</button>
+                </li>
+                <li class="review__item answer">
+                  <svg width="42" height="42" aria-hidden="true">
+                    <use href="/icons/stack.svg#avatar"></use>
+                  </svg>
+                  <p class="review__user-name">ghost555</p>
+                  <p class="review__date">05 SEPTEMBER, 2024</p>
+                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
+                  <button class="review__like">hilfreich</button>
+                  <button class="review__comment">Kommentar</button>
+                </li>
+                <li class="review__item answer-form">
+                  <form action="" method="get">
+                    <p>Hinterlassen Sie eine Bewertung</p>
+                    <div class="review__stars stars">
+                      <span>5 stars</span>
+                    </div>
+                    <textarea name="answer-message" id="answer-message"></textarea>
+                    <input type="text" id="user-name" placeholder="Ihr Name*" required>
+                    <label class="checkbox">
+                      <input type="checkbox" required>
+                      <span class="custom-checkbox"></span>
+                      Ich Bin Kein Roboter
+                    </label>
+                    <button type="submit">Feedback senden</button>
+                  </form>
+                </li>
+                <li class="review__item">
+                  <svg width="42" height="42" aria-hidden="true">
+                    <use href="/icons/stack.svg#avatar"></use>
+                  </svg>
+                  <p class="review__user-name">Cristopher007</p>
+                  <p class="review__date">04 SEPTEMBER, 2024</p>
+                  <div class="review__stars stars">
+                    <span>4 stars</span>
+                  </div>
+                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
+                  <button class="review__like">hilfreich</button>
+                  <button class="review__comment">Kommentar</button>
+                </li>
+                <li class="review__item">
+                  <form action="" method="get">
+                    <p>Hinterlassen Sie eine Bewertung</p>
+                    <div class="review__stars stars">
+                      <span>5 stars</span>
+                    </div>
+                    <textarea name="answer-message" id="answer-message"></textarea>
+                    <input type="text" id="user-name" placeholder="Ihr Name*" required>
+                    <label class="checkbox">
+                      <input type="checkbox" required>
+                      <span class="custom-checkbox"></span>
+                      Ich Bin Kein Roboter
+                    </label>
+                    <button type="submit">Feedback senden</button>
+                  </form>
+                </li>
+            </ul>
             <div class="reviews__form"></div>
           </section>
         </div>
@@ -240,7 +331,7 @@
       <div class="container">
         <h2 class="visually-hidden">Links</h2>
         <div class="footer__wrapper-links">
-          <details>
+          <details open>
             <summary>Lorem Ipsum</summary>
             <ul class="footer__list">
               <li class="footer__item">

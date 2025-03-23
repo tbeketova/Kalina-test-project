@@ -7,6 +7,12 @@
     padding: 0;
     background-color: #B72D93;
   }
+
+  &__button {
+    @media (min-width: $desktop-mini-width) {
+      display: none;
+    }
+  }
 }
 
 .navigation--closed .navigation__list {
