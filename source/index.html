@@ -17,8 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="/scripts/index.js" defer></script>
+
     <title>Kalina-test-project</title>
   </head>
   <body class="page__body">
@@ -75,26 +79,74 @@
           <h1 class="visually-hidden">Kalina casino</h1>
           <section class="promo promo--strawberry">
             <div class="promo__box">
-              <h2 class="promo__title content-title">Quisque luctus varius massa</h2>
+              <h2 class="promo__title content-title">Quisque luctus <br> varius massa</h2>
               <p class="promo__subtitle content-subtitle">Aliquam consectetur</p>
-              <a class="promo__button" href="#">Solosidi Sem</a>
+              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
             </div>
           </section>
           <section class="about">
             <h2 class="about__title content-title">Neque porro quisquam: Kalina</h2>
             <p class="about__description content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend. Fusce cursus sed dui et volutpat. Donec suscipit sodales arcu, eu aliquam lectus convallis eget. Sed luctus nec tellus at luctus. Aliquam purus orci, cursus sed hendrerit sit amet, tincidunt eget nibh. Proin pulvinar nunc id tortor feugiat eleifend. Quisque nec consectetur leo, et blandit nisi. Maecenas ac libero eget elit gravida blandit. Vivamus tempor imperdiet nisl a vestibulum. Duis gravida sodales nisi nec pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend.</p>
             <div class="about__video">
-              <span>Youtube</span>
+              <span class="visually-hidden">Youtube</span>
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KeqzYgIqXUA?si=BeU6mfAV4ZMAhSZj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
             </div>
           </section>
-          <section class="slider-small">
-            <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" width="107" height="146" alt="Mountain">
-            <img src="/images/slider-small/slide-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-            <img src="/images/slider-small/slide-rainbow-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-            <img src="/images/slider-small/slide-sky-tablet@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-            <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-            <img src="/images/slider-small/slide-white-mountain-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-            <img src="/images/slider-small/slide-lake-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+          <section class="slider-up">
+              <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>-->
+                <!-- <div class="slider-1-buttons">
+                  <div class="slider-1-button-prev swiper-button-prev">N</div>
+                  <div class="slider-1-button-next swiper-button-next">V</div>
+                </div> -->
+              <!-- </div>  -->
+
+            <!-- <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" width="107" height="146" alt="Mountain">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-rainbow-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-sky-tablet@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-white-mountain-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-lake-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                </div>
+              </div>-->
+              <!-- <div class="slider-1-buttons">
+                  <div class="slider-1-button-prev swiper-button-prev">N</div>
+                  <div class="slider-1-button-next swiper-button-next">V</div>
+                </div> -->
+            <!-- </div>  -->
+            
+            
             <!-- <picture class="slider-small__picture">
               <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
               <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="180" height="240">
@@ -103,17 +155,14 @@
               <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.jpeg 1x, /images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="180" height="240">
               <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" srcset="/images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Mountain">
             </picture> -->
-            <div class="slider-small__button-box slider-buttons">
-              <button class="slider-buttons__button" id="back-button" type="button">
-                <span class="visually-hidden">Back</span>
-                <!-- <svg width="39" height="39" aria-hidden="true">
-                  <use href="/icons/stack.svg#arrow-links"></use>
-                </svg> -->
-              </button>
-              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+              <div class="slider-small__button-box slider-buttons">
+                <button class="slider-buttons__button" id="back-button" type="button">
+                  <span class="visually-hidden">Prev</span>
+                </button>
+                <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
           </section>
           <section class="features-one features">
             <h2 class="features__title content-title">Aenean lacus mi efficitur in venenatis</h2>
@@ -129,15 +178,21 @@
           </section>
           <section class="slider-horizontal">
             <picture class="slider-horizontal__picture">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
-              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
-              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
-              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
-              <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
+              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.webp 1x, /images/slider-horizontal/black-sand-tablet@2x.webp 2x" width="380" height="248">
+              <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
+              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.png 1x, /images/slider-horizontal/black-sand-tablet@2x.png 2x" width="380" height="248">
+              <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
             </picture>
-            <button class="back" id="back-button" type="button">Back</button>
-            <button class="next" id="next-button" type="button">Next</button>
+            <div class="slider-small__button-box slider-buttons">
+              <button class="slider-buttons__button" id="back-button" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </section>
           <section class="features-two features">
             <h2 class="features__title content-title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
@@ -156,9 +211,11 @@
             </ul>
           </section>
           <section class="promo promo--totem">
-            <h2 class="promo__title">Sed at ex eu velit faucibus</h2>
-            <p class="promo__subtitle">Nullam pulvinar suscipit est, vel vulputate</p>
-            <a class="promo__button" href="#">Solosidi Sem</a>
+            <div class="promo__box">
+              <h2 class="promo__title">Sed at ex eu velit faucibus</h2>
+              <p class="promo__subtitle">Nullam pulvinar <br> suscipit est, vel vulputate</p>
+              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
+            </div>
           </section>
           <section class="features-three features">
             <h2 class="features__title content-title">Donec mi ex efficitur fringilla laoreet eget</h2>
@@ -185,8 +242,14 @@
               <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
               <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
             </picture>
-            <button class="back" id="back-button" type="button">Back</button>
-            <button class="next" id="next-button" type="button">Next</button>
+            <div class="slider-small__button-box slider-buttons">
+              <button class="slider-buttons__button" id="back-button" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </section>
           <section class="features-four features">
             <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
@@ -205,8 +268,14 @@
               <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
               <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
             </picture>
-            <button class="back" id="back-button" type="button">Back</button>
-            <button class="next" id="next-button" type="button">Next</button>
+            <div class="slider-small__button-box slider-buttons">
+              <button class="slider-buttons__button" id="back-button" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </section>
           <section class="features-four features">
             <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
@@ -217,8 +286,11 @@
             </ul>
           </section>
           <section class="promo promo--money">
-            <h2 class="promo__title">Maecenas ex diameget eget</h2>
-            <a class="promo__button" href="#">Solosidi Sem</a>
+            <div class="promo__box">
+              <h2 class="promo__title">Maecenas ex <br> diameget eget</h2>
+              <span></span>
+              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
+            </div>
           </section>
           <section class="reviews">
             <div class="reviews__head">
@@ -250,34 +322,61 @@
                     <span>4 stars</span>
                   </div>
                   <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
-                  <button class="review__like">hilfreich</button>
-                  <button class="review__comment">Kommentar</button>
+                  <div class="review__buttons">
+                    <button class="review__btn-like">hilfreich</button>
+                    <button class="review__btn-comment">Kommentar</button>
+                  </div>
                 </li>
                 <li class="review__item">
-                  <svg width="42" height="42" aria-hidden="true">
-                    <use href="/icons/stack.svg#avatar"></use>
-                  </svg>
+                  <div class="review__image">
+                    <svg width="42" height="42" aria-hidden="true">
+                      <use href="/icons/stack.svg#avatar"></use>
+                    </svg>
+                  </div>
                   <p class="review__user-name">Cristopher007</p>
                   <p class="review__date">04 SEPTEMBER, 2024</p>
                   <div class="review__stars stars">
                     <span>4 stars</span>
                   </div>
                   <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
-                  <button class="review__like">hilfreich</button>
-                  <button class="review__comment">Kommentar</button>
+                  <div class="review__buttons">
+                    <button class="review__btn-like">hilfreich</button>
+                    <button class="review__btn-comment">Kommentar</button>
+                  </div>
                 </li>
-                <li class="review__item answer">
-                  <svg width="42" height="42" aria-hidden="true">
-                    <use href="/icons/stack.svg#avatar"></use>
-                  </svg>
+                <li class="review__item">
+                  <div class="review__image">
+                    <svg width="42" height="42" aria-hidden="true">
+                      <use href="/icons/stack.svg#avatar"></use>
+                    </svg>
+                  </div>
+                  <p class="review__user-name">Cristopher007</p>
+                  <p class="review__date">04 SEPTEMBER, 2024</p>
+                  <div class="review__stars stars">
+                    <span>4 stars</span>
+                  </div>
+                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
+                  <div class="review__buttons">
+                    <button class="review__btn-like">hilfreich</button>
+                    <button class="review__btn-comment">Kommentar</button>
+                  </div>
+                </li>
+                <li class="review__item review__item--answer">
+                  <div class="review__image">
+                    <svg width="42" height="42" aria-hidden="true">
+                      <use href="/icons/stack.svg#avatar"></use>
+                    </svg>
+                  </div>
                   <p class="review__user-name">ghost555</p>
                   <p class="review__date">05 SEPTEMBER, 2024</p>
-                  <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
-                  <button class="review__like">hilfreich</button>
-                  <button class="review__comment">Kommentar</button>
+                  <p class="review__content review__content--answer">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio.</p>
+                  <!-- <div class="review__buttons">
+                    <button class="review__btn-like">hilfreich</button>
+                    <button class="review__btn-comment">Kommentar</button>
+                  </div> -->
                 </li>
-                <li class="review__item answer-form">
-                  <form action="" method="get">
+                <li class="review__item review__item--answer-form answer-form form">
+                  <form class="answer-form__form" action="" method="get">
                     <p>Hinterlassen Sie eine Bewertung</p>
                     <div class="review__stars stars">
                       <span>5 stars</span>
@@ -302,11 +401,13 @@
                     <span>4 stars</span>
                   </div>
                   <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
-                  <button class="review__like">hilfreich</button>
-                  <button class="review__comment">Kommentar</button>
+                  <div class="review__buttons">
+                    <button class="review__btn-like">hilfreich</button>
+                    <button class="review__btn-comment">Kommentar</button>
+                  </div>
                 </li>
-                <li class="review__item">
-                  <form action="" method="get">
+                <li class="review__item form">
+                  <form class="review__question-form" action="" method="get">
                     <p>Hinterlassen Sie eine Bewertung</p>
                     <div class="review__stars stars">
                       <span>5 stars</span>

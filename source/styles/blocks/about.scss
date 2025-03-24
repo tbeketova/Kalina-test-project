@@ -8,8 +8,12 @@
   }
 
   &__video {
-    height: 180px;
-    border: 3px solid $black-color;
+    max-width: 1200px;
+    min-height: 195px;
+    margin: 0 auto;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid $black-color;
   }
 }

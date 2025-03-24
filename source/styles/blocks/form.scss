@@ -1,0 +1,61 @@
+.form {
+  grid-template-columns: 1fr;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 117px;
+    border: 1px solid $color-text;
+    border-radius: 12px;
+    background-color: transparent;
+  }
+
+  input[type="text"] {
+    border: 1px solid $color-text;
+    border-radius: 12px;
+    background-color: transparent;
+    padding: 8px;
+
+    &::placeholder {
+      color: $basic-text;
+      opacity: 0.2;
+      padding-left: 20px;
+    }
+  }
+
+  label {
+    border: 1px solid $color-text;
+    border-radius: 12px;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  button {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    border: 1px solid $burger-menu-stroke;
+    border-radius: 12px;
+    background-color: $background-button;
+    padding: 8px;
+    color: $basic-text;
+    text-transform: uppercase;
+  }
+}
