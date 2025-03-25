@@ -8,7 +8,9 @@
     background-color: rgba($burger-menu-stroke, 0.9);
 
     @media (min-width: $desktop-mini-width) {
-      padding: 0 40px;
+      display: block;
+      position: absolute;
+      top: 38px;
     }
   }
 
@@ -21,6 +23,13 @@
 
 .navigation--closed .navigation__list {
   display: none;
+
+  @media (min-width: $desktop-mini-width) {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 0;
+  }
 }
 
 .navigation--opened .navigation__list {
