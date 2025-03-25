@@ -1,4 +1,4 @@
-const swiper = new Swiper (".mySwiper", {
+const sSwiper = new Sswiper (".mySwiper", {
   slidesPerView: 3,
   /* grid: {
     rows: 2,
@@ -11,6 +11,17 @@ const swiper = new Swiper (".mySwiper", {
   navigation: {
     nextEl: '.slider-1-button-next',
     prevEl: '.slider-1-button-prev',
+  },
+});
+
+const swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 

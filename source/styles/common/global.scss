@@ -72,6 +72,12 @@ img {
   }
 }
 
+.page__wrapper .container {
+  @media (min-width: $desktop-mini-width) {
+    padding: 0 40px 0 140px;
+  }
+}
+
 .content-title {
   font-family: "Oswald", sans-serif;
   font-size: 20px;

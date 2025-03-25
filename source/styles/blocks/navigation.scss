@@ -4,14 +4,65 @@
   &__list {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: rgba($burger-menu-stroke, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    z-index: 15;
 
     @media (min-width: $desktop-mini-width) {
-      display: block;
+      display: flex;
       position: absolute;
-      top: 38px;
     }
+  }
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #B72D93 0%, #6D1185 100%);
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: center center;
+    }
+
+    &--home::before {
+      background-image: url("../../icons/menu/home.svg");
+    }
+
+    &--todo::before {
+      background-image: url("../../icons/menu/todo.svg");
+    }
+
+    &--diagramme::before {
+      background-image: url("../../icons/menu/diagramm.svg");
+    }
+
+    &--user::before {
+      background-image: url("../../icons/menu/user.svg");
+    }
+
+    &--dollars::before {
+      background-image: url("../../icons/menu/dollars.svg");
+    }
+  }
+
+  &__item:hover {
+    opacity: 0.5;
   }
 
   &__button {
@@ -25,7 +76,7 @@
   display: none;
 
   @media (min-width: $desktop-mini-width) {
-    display: block;
+    display: flex;
     position: absolute;
     top: 38px;
     left: 0;
@@ -33,7 +84,8 @@
 }
 
 .navigation--opened .navigation__list {
-  display: block;
+  display: flex;
   position: absolute;
   top: 38px;
+  left: -15px;
 }

@@ -59,14 +59,30 @@
               <span class="visually-hidden">Open menu</span>
             </button>
             <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="">Home</a>
+              <li class="navigation__item navigation__item--home">
+                <a class="navigation__link" href="#">
+                  <span class="visually-hidden">Home</span>
+                </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="">Check</a>
+              <li class="navigation__item navigation__item--todo">
+                <a class="navigation__link" href="#">
+                  <span class="visually-hidden">Check</span>
+                </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="">Diagramme</a>
+              <li class="navigation__item navigation__item--diagramme">
+                <a class="navigation__link" href="#">
+                  <span class="visually-hidden">Diagramme</span>
+                </a>
+              </li>
+              <li class="navigation__item navigation__item--user">
+                <a class="navigation__link" href="#">
+                  <span class="visually-hidden">User</span>
+                </a>
+              </li>
+              <li class="navigation__item navigation__item--dollars">
+                <a class="navigation__link" href="#">
+                  <span class="visually-hidden">Dollars</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -89,8 +105,54 @@
             <p class="about__description content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend. Fusce cursus sed dui et volutpat. Donec suscipit sodales arcu, eu aliquam lectus convallis eget. Sed luctus nec tellus at luctus. Aliquam purus orci, cursus sed hendrerit sit amet, tincidunt eget nibh. Proin pulvinar nunc id tortor feugiat eleifend. Quisque nec consectetur leo, et blandit nisi. Maecenas ac libero eget elit gravida blandit. Vivamus tempor imperdiet nisl a vestibulum. Duis gravida sodales nisi nec pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare purus non orci suscipit, vitae posuere magna eleifend.</p>
             <div class="about__video">
               <span class="visually-hidden">Youtube</span>
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KeqzYgIqXUA?si=BeU6mfAV4ZMAhSZj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KeqzYgIqXUA?si=BeU6mfAV4ZMAhSZj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+          </section>
+          <section class="slider-horizontal">
+            <!-- <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+            <!-- <picture class="slider-horizontal__picture">
+              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
+              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.webp 1x, /images/slider-horizontal/black-sand-tablet@2x.webp 2x" width="380" height="248">
+              <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
+              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
+              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.png 1x, /images/slider-horizontal/black-sand-tablet@2x.png 2x" width="380" height="248">
+              <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
+            </picture> -->
+            <div class="slider-small__button-box slider-buttons">
+              <button class="slider-buttons__button" id="back-button" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+          <section class="features-one features">
+            <h2 class="features__title content-title">Aenean lacus mi efficitur in venenatis</h2>
+            <p class="features__description content-description">Venenatis:</p>
+            <ul class="features__list content-list">
+              <li class="features__item">Quisque luctus varius massa, in gravida arcu condimentum in. Vivamus auctor eleifend metus, ac efficitur metus tempor ullamcorper. Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
+              <li class="features__item">Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet. Ut ut risus in erat iaculis porta ac vitae elit. Proin et felis eget risus venenatis lobortis. Duis rutrum orci ac placerat rhoncus.</li>
+              <li class="features__item">Quisque nec ligula sodales, mattis mauris sit amet, ullamcorper lorem. Integer hendrerit, mi non luctus pulvinar, eros nunc tristique mi, nec placerat urna lacus ut justo. Donec vitae sapien sed lorem venenatis aliquet.</li>
+              <li class="features__item">Ut cursus imperdiet mi, id pellentesque arcu cursus at. Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet.</li>
+              <li class="features__item">Aliquam ut lorem augue. Vestibulum quis ullamcorper leo, ac maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
+              <li class="features__item">Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
+            </ul>
           </section>
           <section class="slider-up">
               <!-- <div class="swiper mySwiper">
@@ -139,7 +201,7 @@
                 <div class="swiper-slide">
                   <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
                 </div>
-              </div>-->
+              </div> -->
               <!-- <div class="slider-1-buttons">
                   <div class="slider-1-button-prev swiper-button-prev">N</div>
                   <div class="slider-1-button-next swiper-button-next">V</div>
@@ -163,36 +225,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-          </section>
-          <section class="features-one features">
-            <h2 class="features__title content-title">Aenean lacus mi efficitur in venenatis</h2>
-            <p class="features__description content-description">Venenatis:</p>
-            <ul class="features__list content-list">
-              <li class="features__item">Quisque luctus varius massa, in gravida arcu condimentum in. Vivamus auctor eleifend metus, ac efficitur metus tempor ullamcorper. Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
-              <li class="features__item">Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet. Ut ut risus in erat iaculis porta ac vitae elit. Proin et felis eget risus venenatis lobortis. Duis rutrum orci ac placerat rhoncus.</li>
-              <li class="features__item">Quisque nec ligula sodales, mattis mauris sit amet, ullamcorper lorem. Integer hendrerit, mi non luctus pulvinar, eros nunc tristique mi, nec placerat urna lacus ut justo. Donec vitae sapien sed lorem venenatis aliquet.</li>
-              <li class="features__item">Ut cursus imperdiet mi, id pellentesque arcu cursus at. Mauris aliquam sagittis erat at facilisis. Aliquam erat volutpat. Morbi efficitur elementum sem ac laoreet.</li>
-              <li class="features__item">Aliquam ut lorem augue. Vestibulum quis ullamcorper leo, ac maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</li>
-              <li class="features__item">Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
-            </ul>
-          </section>
-          <section class="slider-horizontal">
-            <picture class="slider-horizontal__picture">
-              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
-              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.webp 1x, /images/slider-horizontal/black-sand-tablet@2x.webp 2x" width="380" height="248">
-              <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
-              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
-              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.png 1x, /images/slider-horizontal/black-sand-tablet@2x.png 2x" width="380" height="248">
-              <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
-            </picture>
-            <div class="slider-small__button-box slider-buttons">
-              <button class="slider-buttons__button" id="back-button" type="button">
-                <span class="visually-hidden">Prev</span>
-              </button>
-              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
           </section>
           <section class="features-two features">
             <h2 class="features__title content-title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
@@ -240,7 +272,7 @@
               <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
               <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
               <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
-              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Lake">
             </picture>
             <div class="slider-small__button-box slider-buttons">
               <button class="slider-buttons__button" id="back-button" type="button">
@@ -266,7 +298,7 @@
               <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
               <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
               <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
-              <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Банка кофе">
+              <img class="slider-horizontal__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Mountain">
             </picture>
             <div class="slider-small__button-box slider-buttons">
               <button class="slider-buttons__button" id="back-button" type="button">
