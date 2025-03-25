@@ -22,6 +22,66 @@
       width: 85%;
       margin-left: auto;
     }
+
+    &--more {
+      position: relative;
+      overflow: hidden;
+      background: $gradient-reviews;
+      z-index: 5;
+    }
+
+    &--more .review__content {
+      opacity: 0.5;
+    }
+
+    &--more .review__buttons {
+      opacity: 0.2;
+    }
+
+    &--more::after { //заглушка на последний отзив
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(68, 42, 76, 0.95) 100%);
+      z-index: 1;
+    }
+
+    &--more .review__btn-more {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: $basic-text;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 8%;
+      z-index: 15;
+      text-align: center;
+      /* display: flex; */
+    }
+
+    &--more svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* &--more .review__btn-more::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      right: 0;
+      background-image: url("../../icons/arrow-select.svg");
+      background-repeat: no-repeat;
+      background-size: 15px 15px;
+      z-index: 16;
+    } */
   }
 
   &__image {
@@ -129,4 +189,10 @@
       background-position: left 50%;
     }
   }
+
+  &__btn-like:hover,
+  &__btn-comment:hover {
+    opacity: 0.5;
+  }
 }
+

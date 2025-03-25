@@ -1,7 +1,9 @@
-import {openDetails} from './modules/details-open.js';
+import { openDetails } from './modules/details-open.js';
+import { openBurgerMenu } from './modules/burger-menu.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   openDetails();
+  openBurgerMenu();
 
   window.addEventListener('resize', () => {
     openDetails(); // запускаем на каждом изменении ширины окна

@@ -5,7 +5,11 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #B72D93;
+    background-color: rgba($burger-menu-stroke, 0.9);
+
+    @media (min-width: $desktop-mini-width) {
+      padding: 0 40px;
+    }
   }
 
   &__button {
