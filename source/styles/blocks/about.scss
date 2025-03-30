@@ -9,13 +9,13 @@
 
   &__video {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     min-height: 200px;
     margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    /* border: 2px solid $black-color; */
+    border: 2px solid $black-color;
 
     @media (min-width: $tablet-width) {
       min-height: 400px;

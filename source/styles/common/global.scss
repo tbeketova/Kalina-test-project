@@ -26,7 +26,7 @@ img {
 .page__body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   /* font-family: "Osw"; */
@@ -34,11 +34,11 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  /* background-color: rgb(91, 7, 91); */
+  border: 3px solid orange;
   position: relative;
 
   &::before {
-    content: ' ';
+    content: "";
     position: fixed;
     inset: 0;
     background-image: url('../../images/background-page/background-main-tablet@2x.webp');
@@ -46,7 +46,6 @@ img {
     background-size: 375px auto;
     background-position: center;
     z-index: -1;
-    /* transform: scaleX(-1); */ /* развернуть фон по горизонтали */
 
     @media (min-width: 768px) {
       background-size: 450px auto;
@@ -59,7 +58,8 @@ img {
 }
 
 .container {
-  max-width: 1440px;
+  /* max-width: 1646px; */
+  max-width: 1830px;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -84,6 +84,11 @@ img {
   line-height: 30px;
   font-weight: 700;
   margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 35px;
+    line-height: 52px;
+  }
 }
 
 .content-description {
@@ -109,6 +114,22 @@ img {
     list-style-position: inside;
   }
 }
+
+/* .promo-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+
+.promo-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  margin: 0 0 15px;
+} */
 
 .promo-button {
   display: block;

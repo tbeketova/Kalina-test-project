@@ -8,7 +8,8 @@
   &__item {
     background-color: rgba($background-dark, 0.6);
     border-radius: 20px;
-    padding: 26px 22px 24px;
+    /* padding: 26px 22px 24px; */
+    padding: 26px 16px;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     grid-template-rows: min-content min-content 1fr min-content;
@@ -140,6 +141,7 @@
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     gap: 20px;
   }
