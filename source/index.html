@@ -17,10 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <title>Kalina-test-project</title>
   </head>
   <body class="page__body">
@@ -107,38 +106,78 @@
             </div>
           </section>
           <section class="slider-horizontal">
-            <!-- <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+              <div class="swiper" id="big-slider">
+                <div class="swiper-wrapper">
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature 1">
+                    </picture>
+                  </div>
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/beach-desktop@1x.webp 1x, /images/slider-horizontal/beach-desktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/beach-tablet@1x.webp 1x, /images/slider-horizontal/beach-tablet@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/beach-tablet@1x.webp 1x, /images/slider-horizontal/beach-tablet@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/beach-desktop@1x.png 1x, /images/slider-horizontal/beach-desktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/beach-tablet@1x.png 1x, /images/slider-horizontal/beach-tablet@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/beach-tablet@1x.jpeg" srcset="/images/slider-horizontal/beach-tablet@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
+                    </picture>
+                  </div>
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/rainbow-nature-desktop@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tabletdesktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/rainbow-nature-desktop@1x.png 1x, /images/slider-horizontal/rainbow-nature-tabletdesktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.png 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/rainbow-nature-tablet@1x.jpeg" srcset="/images/slider-horizontal/rainbow-nature-tablet@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
+                    </picture>
+                  </div>
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature 1">
+                    </picture>
+                  </div>
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/beach-desktop@1x.webp 1x, /images/slider-horizontal/beach-desktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/beach-tablet@1x.webp 1x, /images/slider-horizontal/beach-tablet@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/beach-tablet@1x.webp 1x, /images/slider-horizontal/beach-tablet@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/beach-desktop@1x.png 1x, /images/slider-horizontal/beach-desktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/beach-tablet@1x.png 1x, /images/slider-horizontal/beach-tablet@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/beach-tablet@1x.jpeg" srcset="/images/slider-horizontal/beach-tablet@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
+                    </picture>
+                  </div>
+                  <div class="slider-horizontal__slide swiper-slide">
+                    <picture class="slider-horizontal__picture">
+                      <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/rainbow-nature-desktop@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tabletdesktop@2x.webp 2x" width="531" height="348">
+                      <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.webp 2x" width="380" height="248">
+                      <source type="image/webp" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.webp 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.webp 2x" width="345" height="226">
+                      <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/rainbow-nature-desktop@1x.png 1x, /images/slider-horizontal/rainbow-nature-tabletdesktop@2x.png 2x" width="531" height="348">
+                      <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/rainbow-nature-tablet@1x.png 1x, /images/slider-horizontal/rainbow-nature-tablet@2x.png 2x" width="380" height="248">
+                      <img class="slider-horizontal__img" src="/images/slider-horizontal/rainbow-nature-tablet@1x.jpeg" srcset="/images/slider-horizontal/rainbow-nature-tablet@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
+                    </picture>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div> -->
-            <picture class="slider-horizontal__picture">
-              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.webp 1x, /images/slider-horizontal/black-sand-desktop@2x.webp 2x" width="531" height="348">
-              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.webp 1x, /images/slider-horizontal/black-sand-tablet@2x.webp 2x" width="380" height="248">
-              <source type="image/webp" srcset="/images/slider-horizontal/black-sand-mobile@1x.webp 1x, /images/slider-horizontal/black-sand-mobile@2x.webp 2x" width="345" height="226">
-              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-horizontal/black-sand-desktop@1x.png 1x, /images/slider-horizontal/black-sand-desktop@2x.png 2x" width="531" height="348">
-              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-horizontal/black-sand-tablet@1x.png 1x, /images/slider-horizontal/black-sand-tablet@2x.png 2x" width="380" height="248">
-              <img class="slider-horizontal__img" src="/images/slider-horizontal/black-sand-mobile@1x.jpeg" srcset="/images/slider-horizontal/black-sand-mobile@2x.jpeg 2x" width="345" height="226" alt="Picture nature">
-            </picture>
-            <div class="slider-small__button-box slider-buttons">
-              <button class="slider-buttons__button" id="back-button" type="button">
-                <span class="visually-hidden">Prev</span>
-              </button>
-              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+              <div class="slider-horizontal__button-box slider-buttons">
+                <button class="slider-horizontal__button slider-buttons__button swiper-button-prev" type="button">
+                  <span class="visually-hidden">Prev</span>
+                </button>
+                <button class="slider-horizontal__button slider-buttons__button slider-buttons__button--next swiper-button-next" type="button">
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
           </section>
           <section class="features-one features">
             <h2 class="features__title content-title">Aenean lacus mi efficitur in venenatis</h2>
@@ -166,12 +205,12 @@
                   <div class="swiper-slide">Slide 9</div>
                 </div>
                 <div class="swiper-pagination"></div>
-                </div> -->
+              </div> -->
                 <!-- <div class="slider-1-buttons">
                   <div class="slider-1-button-prev swiper-button-prev">N</div>
                   <div class="slider-1-button-next swiper-button-next">V</div>
                 </div>
-              </div> -->
+              </div>
 
             <!-- <div class="swiper mySwiper">
               <div class="swiper-wrapper">
@@ -325,7 +364,7 @@
               <img class="promo__image-arrow" src="/images/promo-money/arrow-mobile@1x.png" alt="Arrow" width="88" height="61">
             </div>
           </section>
-          <!-- <section class="reviews">
+          <section class="reviews">
             <div class="reviews__head">
               <h2 class="reviews__title">Mauris in Metus luctus️
                 <span>*Nulla in ultricies lorem</span>
@@ -459,7 +498,7 @@
                   </form>
                 </li>
             </ul>
-          </section> -->
+          </section>
         </div>
       </div>
     </main>
@@ -712,6 +751,7 @@
       </div>
     </footer>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="/scripts/index.js" defer></script>
   </body>
 </html>

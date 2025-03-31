@@ -124,27 +124,6 @@ export function optimizeRaster () {
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }
 
-
-export function findBigImages() {
-  const MAX_DIMENSION = 8000; // можно изменить на 10000 или 16383 по необходимости
-
-  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
-    .pipe(through2.obj(function (file, _, cb) {
-      if (!file.isBuffer()) {
-        cb(null, file);
-        return;
-      }
-
-      const dimensions = imageSize(file.contents);
-
-      if (dimensions.width > MAX_DIMENSION || dimensions.height > MAX_DIMENSION) {
-        console.log(`⚠️  [BIG IMAGE]: ${path.relative(process.cwd(), file.path)} - ${dimensions.width}x${dimensions.height}px`);
-      }
-
-      cb(null, file);
-    }));
-}
-
 export function optimizeVector () {
   return src([`${PATH_TO_RAW}**/*.svg`])
     .pipe(svgo())

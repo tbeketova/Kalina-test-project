@@ -1,28 +1,18 @@
 import { openDetails } from './modules/details-open.js';
 import { openBurgerMenu } from './modules/burger-menu.js';
+import { initSwiper, checkBreakpoint } from './modules/swiper.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   openDetails();
+  // Инициализация мобильного меню
   openBurgerMenu();
+  // Инициализация слайдера отзывов
+  initSwiper();
+  // Уничтожение слайдера
+  checkBreakpoint();
 
   window.addEventListener('resize', () => {
     openDetails(); // запускаем на каждом изменении ширины окна
   });
-});
-
-const swiper = new Swiper (".mySwiper", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.slider-1-button-next',
-    prevEl: '.slider-1-button-prev',
-  },
 });
 
