@@ -171,10 +171,10 @@
                 </div>
               </div>
               <div class="slider-horizontal__button-box slider-buttons">
-                <button class="slider-horizontal__button slider-buttons__button swiper-button-prev" type="button">
+                <button class="slider-buttons__button vertical-button-prev" type="button">
                   <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="slider-horizontal__button slider-buttons__button slider-buttons__button--next swiper-button-next" type="button">
+                <button class="slider-buttons__button slider-buttons__button--next vertical-button-next" type="button">
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -191,77 +191,59 @@
               <li class="features__item">Praesent sed facilisis sem, eu blandit nisl. Sed fringilla, nisl id consequat fringilla, leo magna tempus dolor, euismod tincidunt lectus felis sed tellus.</li>
             </ul>
           </section>
-          <section class="slider-up">
-              <!-- <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div> -->
-                <!-- <div class="slider-1-buttons">
-                  <div class="slider-1-button-prev swiper-button-prev">N</div>
-                  <div class="slider-1-button-next swiper-button-next">V</div>
-                </div>
-              </div>
-
-            <!-- <div class="swiper mySwiper">
+          <section class="slider-vertical">
+            <div class="swiper" id="vertical-slider">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" width="107" height="146" alt="Mountain">
+                <div class="slider-vertical__slide swiper-slide">
+                  <picture class="slider-vertical__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.webp 2x" width="315" height="473">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.webp 2x" width="240" height="361">
+                    <source type="image/webp" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-mobile@2x.webp 2x" width="162" height="243">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.jpeg 2x" width="315" height="473">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.jpeg 2x" width="240" height="361">
+                    <img class="slider-vertical__img" src="/images/slider-vertical/slider-vertical-cloud-mobile@1x/@1x.jpeg" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@2x.jpeg 2x" width="162" height="243" alt="Picture cloud">
+                  </picture>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree">
+                <div class="slider-vertical__slide swiper-slide">
+                  <picture class="slider-vertical__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.webp 2x" width="315" height="473">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.webp 2x" width="240" height="361">
+                    <source type="image/webp" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-mobile@2x.webp 2x" width="162" height="243">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.jpeg 2x" width="315" height="473">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.jpeg 2x" width="240" height="361">
+                    <img class="slider-vertical__img" src="/images/slider-vertical/slider-vertical-cloud-mobile@1x/@1x.jpeg" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@2x.jpeg 2x" width="162" height="243" alt="Picture cloud">
+                  </picture>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-rainbow-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                <div class="slider-vertical__slide swiper-slide">
+                  <picture class="slider-vertical__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.webp 2x" width="315" height="473">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.webp 2x" width="240" height="361">
+                    <source type="image/webp" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-mobile@2x.webp 2x" width="162" height="243">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.jpeg 2x" width="315" height="473">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.jpeg 2x" width="240" height="361">
+                    <img class="slider-vertical__img" src="/images/slider-vertical/slider-vertical-cloud-mobile@1x/@1x.jpeg" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@2x.jpeg 2x" width="162" height="243" alt="Picture cloud">
+                  </picture>
                 </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-sky-tablet@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-white-mountain-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-lake-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/images/slider-small/slide-colorful-tree-mobile@1x.jpeg" width="107" height="146" alt="Tree ranbow">
+                <div class="slider-vertical__slide swiper-slide">
+                  <picture class="slider-vertical__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.webp 2x" width="315" height="473">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.webp 2x" width="240" height="361">
+                    <source type="image/webp" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@1x.webp 1x, /images/slider-vertical/slider-vertical-cloud-mobile@2x.webp 2x" width="162" height="243">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-vertical/slider-vertical-cloud-desktop@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-desktop@2x.jpeg 2x" width="315" height="473">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-vertical/slider-vertical-cloud-tablet@1x.jpeg 1x, /images/slider-vertical/slider-vertical-cloud-tablet@2x.jpeg 2x" width="240" height="361">
+                    <img class="slider-vertical__img" src="/images/slider-vertical/slider-vertical-cloud-mobile@1x/@1x.jpeg" srcset="/images/slider-vertical/slider-vertical-cloud-mobile@2x.jpeg 2x" width="162" height="243" alt="Picture cloud">
+                  </picture>
                 </div>
               </div>
-              <div class="slider-1-buttons">
-                  <div class="slider-1-button-prev swiper-button-prev">N</div>
-                  <div class="slider-1-button-next swiper-button-next">V</div>
-                </div>
-            </div> -->
-            
-            
-            <picture class="slider-small__picture">
-              <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-              <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.webp 1x, /images/slider-small/slide-mountain-desktop@2x.webp 2x" width="180" height="240">
-              <source type="image/webp" srcset="/images/slider-small/slide-mountain-mobile@1x.webp 1x, /images/slider-small/slider_white_mobile@2x.webp 2x" width="107" height="146">
-              <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-small/slide-mountain-desktop@1x.jpeg 1x, /images/slider-small/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-              <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-small/slide-mountain-desktop@1x.jpeg 1x, /images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="180" height="240">
-              <img class="slider-small__img" src="/images/slider-small/slide-mountain-mobile@1x.jpeg" srcset="/images/slider-small/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Mountain">
-            </picture>
-              <div class="slider-small__button-box slider-buttons">
-                <button class="slider-buttons__button" id="back-button" type="button">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            </div>
+            <div class="slider-vertical__button-box slider-buttons">
+              <button class="slider-buttons__button vertical-button-prev" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next vertical-button-next" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </section>
           <section class="features-two features">
             <h2 class="features__title content-title">Mauris ultricies ante sit amet ex imperdiet efficitur</h2>
@@ -302,24 +284,80 @@
               <li class="features__item">Vivamus condimentum ullamcorper ipsum, ac elementum justo semper eget. Pellentesque luctus at ex ut hendrerit. Proin bibendum faucibus lacinia. Aenean quis ex ac risus lobortis interdum sit amet nec quam. Integer consectetur mi nunc, et vestibulum metus tempor ac.</li>
             </ul>
           </section>
-          <section class="slider-small">
-            <picture class="slider-small__picture">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
-              <source type="image/webp" srcset="/images/slider_white_mobile@1x.webp 1x, /images/slider_white_mobile@2x.webp 2x" width="280" height="280">
-              <source type="image/png" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.png 1x, /images/slider_white_desktop@2x.png 2x" width="600" height="600">
-              <source type="image/png" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.png 1x, /images/slider_white_tablet@2x.png 2x" width="280" height="280">
-              <img class="slider-small__img" src="/images/slider_white_mobile@1x.png" srcset="/images/slider_white_mobile@2x.png 2x" width="280" height="280" alt="Lake">
-            </picture>
-            <div class="slider-small__button-box slider-buttons">
-              <button class="slider-buttons__button" id="back-button" type="button">
+          <!-- <section class="slider-grid">
+            <div class="swiper" id="grid-slider">
+              <div class="swiper-wrapper">
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+                <div class="slider-grid__slide swiper-slide">
+                  <picture class="slider-grid__picture">
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
+                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
+                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
+                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
+                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
+                    <img class="slider-grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="slider-grid__button-box slider-buttons">
+              <button class="slider-buttons__button grid-button-prev" type="button">
                 <span class="visually-hidden">Prev</span>
               </button>
-              <button class="slider-buttons__button slider-buttons__button--next" id="next-button" type="button">
+              <button class="slider-buttons__button slider-buttons__button--next grid-button-next" type="button">
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </section>
+          </section> -->
           <section class="features-four features">
             <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
             <p class="features__description content-description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -328,7 +366,7 @@
               <li class="features__item">Quisque sagittis, ipsum non finibus molestie, nisl risus eleifend felis, a cursus sem magna ac massa. Phasellus molestie consectetur ornare.</li>
             </ul>
           </section>
-          <section class="slider-vertical">
+          <!-- <section class="slider-vertical">
             <picture class="slider-horizontal__picture">
               <source type="image/webp" media="(min-width: 1440px)" srcset="/images/slider_white_desktop@1x.webp 1x, /images/slider_white_desktop@2x.webp 2x" width="600" height="600">
               <source type="image/webp" media="(min-width: 768px)" srcset="/images/slider_white_tablet@1x.webp 1x, /images/slider_white_tablet@2x.webp 2x" width="280" height="280">
@@ -345,7 +383,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </section>
+          </section> -->
           <section class="features-four features">
             <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
             <p class="features__description content-description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -1,12 +1,7 @@
 @import "../../../node_modules/swiper/swiper";
 @import "../../../node_modules/swiper/modules/navigation";
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-button-disabled {
   opacity: 0.2;
-  pointer-events: none; // чтобы нельзя было кликнуть
+  pointer-events: none; /* чтобы нельзя было кликнуть */
 }

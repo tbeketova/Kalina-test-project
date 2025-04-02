@@ -7,7 +7,7 @@
       margin-bottom: 35px;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: $desktop-width) {
       flex-wrap: wrap;
       gap: 35px;
       justify-content: center;
@@ -15,16 +15,8 @@
   }
 
   &__slide {
-    /* justify-content: center; */
-    /* width: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-
-     */
-
     @media (min-width: $tablet-width) {
       width: 48%;
-      /* flex: 0 0 48%; */
     }
 
     @media (min-width: $desktop-width) {
@@ -47,11 +39,5 @@
     height: 100%;
     display: block;
     object-fit: cover;
-  }
-
-  &__button-box {
-    @media (min-width: 1920px) {
-      display: none !important;
-    }
   }
 }

@@ -1,0 +1,55 @@
+.slider-vertical {
+  .swiper-wrapper {
+    width: 100%;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: wrap;
+      gap: 44px;
+    }
+  }
+
+  &__slide {
+    width: 45%;
+
+    @media (min-width: $tablet-width) {
+      width: 31%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 23%;
+      margin-right: 0 !important;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 4px; // толщина псевдо-границы
+    border-radius: 15px;
+    background: $gradient-border-slider-vertical;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    @media (min-width: $tablet-width) {
+      padding: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 85%;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px; // 15 - 4, чтобы не наезжала на границу
+  }
+}

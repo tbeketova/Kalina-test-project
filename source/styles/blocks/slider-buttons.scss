@@ -4,6 +4,10 @@
   gap: 60px;
   justify-content: center;
 
+  @media (min-width: $desktop-width) {
+    display: none !important;
+  }
+
   &__button {
     display: block;
     width: 39px;

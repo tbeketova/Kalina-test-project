@@ -1,4 +1,4 @@
-export const openDetails = () => {
+export function openDetails() {
   const details = document.querySelectorAll('.footer details');
   if(window.innerWidth >= 1024) {
     details.forEach((el) => {
@@ -9,4 +9,6 @@ export const openDetails = () => {
       el.removeAttribute('open');
     });
   }
-};
+
+  window.addEventListener('resize', openDetails);
+}

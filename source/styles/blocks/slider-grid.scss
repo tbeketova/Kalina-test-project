@@ -1,0 +1,62 @@
+.slider-grid {
+  .swiper-wrapper {
+    width: 100%;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      height: auto;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 833px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: calc(146px * 2 + 12px); // для 2 строк по 146px + gap между строками
+      gap: 12px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: wrap;
+      gap: 44px;
+    }
+  }
+
+  &__slide {
+    width: 30%;
+    height: 146px;
+
+    @media (min-width: $tablet-width) {
+      width: 22%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 18%;
+      margin-right: 0 !important;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: 146px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+      
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 85%;
+    }
+  }
+
+  &__img {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    width: 107px;
+    height: 146px;
+    object-fit: cover;
+  }
+}
