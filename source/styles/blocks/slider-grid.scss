@@ -1,19 +1,19 @@
 .slider-grid {
+  .swiper {
+    width: 96%;
+  }
+
   .swiper-wrapper {
-    width: 100%;
-    margin-bottom: 22px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 0;
+    height: calc(146px * 2 + 12px);
 
     @media (min-width: $tablet-width) {
+      display: flex;
       height: auto;
-      margin-bottom: 50px;
-    }
-
-    @media (max-width: 833px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      height: calc(146px * 2 + 12px); // для 2 строк по 146px + gap между строками
-      gap: 12px 0;
+      gap: 0;
+      flex-wrap: nowrap;
     }
 
     @media (min-width: $desktop-width) {
@@ -22,41 +22,31 @@
     }
   }
 
-  &__slide {
-    width: 30%;
-    height: 146px;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* height: 146px; */
 
     @media (min-width: $tablet-width) {
-      width: 22%;
+      width: 25% !important;
+      /* height: 240px; */
+      height: 100%;
     }
 
-    @media (min-width: $desktop-width) {
-      width: 18%;
+    @media (min-width: $desktop-mini-width) {
+      width: 30% !important;
+      /* height: 288px; */
+      height: 100%;
       margin-right: 0 !important;
     }
   }
 
-  &__picture {
-    width: 100%;
-    height: 146px;
-    border-radius: 15px;
-    overflow: hidden;
-
-    @media (min-width: $tablet-width) {
-      
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 85%;
-    }
-  }
-
   &__img {
-    display: block;
-    /* width: 100%;
-    height: 100%; */
-    width: 107px;
-    height: 146px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 15px;
   }
 }

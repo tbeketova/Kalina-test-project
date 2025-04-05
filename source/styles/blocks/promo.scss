@@ -115,7 +115,7 @@
     }
   }
 
-  &__image-coins {
+  &__decoration-coins {
     width: 121px;
     height: 140px;
 
@@ -125,7 +125,7 @@
     }
   }
 
-  &__image-arrow {
+  &__decoration-arrow {
     width: 88px;
     height: 61px;
     margin-top: 30px;
@@ -136,6 +136,10 @@
       height: 100px;
       margin-left: -41px;
     }
+  }
+
+  &__button:hover {
+    opacity: 0.8;
   }
 }
 

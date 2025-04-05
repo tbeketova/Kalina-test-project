@@ -15,6 +15,7 @@
 
   &__slide {
     width: 45%;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 31%;
