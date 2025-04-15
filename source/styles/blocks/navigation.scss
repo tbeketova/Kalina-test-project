@@ -1,6 +1,4 @@
 .navigation {
-  position: relative;
-
   &__list {
     list-style-type: none;
     margin: 0;
@@ -78,15 +76,12 @@
   @media (min-width: $desktop-mini-width) {
     display: flex;
     position: absolute;
-    top: 38px;
+    top: 100%;
     left: 0;
     transition: all 0.3s ease;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    position: absolute;
-    top: 38px;
     left: -65px;
   }
 }
@@ -94,6 +89,6 @@
 .navigation--opened .navigation__list {
   display: flex;
   position: absolute;
-  top: 38px;
-  left: -15px;
+  top: 100%;
+  left: 0;
 }

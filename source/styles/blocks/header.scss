@@ -1,7 +1,7 @@
 .header {
-  padding: 10px 0;
   margin-bottom: 43px;
   background: linear-gradient(90deg, #4d1e70 40%, #49368e 80%);
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
@@ -13,6 +13,8 @@
 
   &__wrapper {
     width: 100%;
+    min-height: 42px;
+    /* padding: 10px 0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +26,7 @@
 
   &__nav {
     order: -1;
+    height: 18px;
   }
 
   &__logo {

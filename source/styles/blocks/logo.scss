@@ -17,11 +17,12 @@
   &__text-box {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 
     picture {
       display: block;
       width: 37px;
-      height: 10px;
+      height: auto;
     }
   }
 }
