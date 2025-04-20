@@ -17,7 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>Kalina-test-project</title>
   </head>
@@ -93,7 +95,7 @@
             <div class="promo__box">
               <h2 class="promo__title content-title">Quisque luctus varius massa</h2>
               <p class="promo__subtitle content-subtitle">Aliquam consectetur</p>
-              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
+              <a class="promo-button" href="#">Solosidi Sem</a>
             </div>
           </section>
           <section class="about">
@@ -104,6 +106,32 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/K7e3jpYf28I?si=2No7ZzctIxeK-orW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </section>
+          <!-- <section class="slider-grid">
+            <div class="slider-grid__wrapper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="slider-grid__button-box slider-buttons">
+              <button class="slider-buttons__button grid-button-prev" type="button">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="slider-buttons__button slider-buttons__button--next grid-button-next" type="button">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section> -->
           <section class="slider-horizontal">
               <div class="swiper" id="big-slider">
                 <div class="swiper-wrapper">
@@ -263,8 +291,8 @@
           <section class="promo promo--totem">
             <div class="promo__box">
               <h2 class="promo__title">Sed at ex eu velit faucibus</h2>
-              <p class="promo__subtitle">Nullam pulvinar suscipit est, vel vulputate</p>
-              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
+              <p class="promo__subtitle">Nullam pulvinar <br> suscipit est, vel vulputate</p>
+              <a class="promo-button" href="#">Solosidi Sem</a>
             </div>
           </section>
           <section class="features-three features">
@@ -283,104 +311,7 @@
               <li class="features__item">Vivamus condimentum ullamcorper ipsum, ac elementum justo semper eget. Pellentesque luctus at ex ut hendrerit. Proin bibendum faucibus lacinia. Aenean quis ex ac risus lobortis interdum sit amet nec quam. Integer consectetur mi nunc, et vestibulum metus tempor ac.</li>
             </ul>
           </section>
-          <section class="slider-grid">
-            <div class="swiper" id="img-slider">
-              <div class="swiper-wrapper">
-                <!-- <div class="swiper-slide">
-                  <picture class="swiper-slide">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="slider-grid__picture">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="slider-grid__picture">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="slider-grid__picture">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="slider-grid__picture">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="slider-grid__picture">
-                    <source type="image/webp" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.webp 1x, /images/slider-grid/slide-mountain-desktop@2x.webp 2x" width="215" height="288">
-                    <source type="image/webp" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.webp 1x, /images/slider-grid/slide-mountain-tablet@2x.webp 2x" width="180" height="240">
-                    <source type="image/webp" srcset="/images/slider-grid/slide-mountain-mobile@1x.webp 1x, /images/slider-grid/slide-mountain-mobile@2x.webp 2x" width="107" height="146">
-                    <source type="image/jpeg" media="(min-width: 1920px)" srcset="/images/slider-grid/slide-mountain-desktop@1x.jpeg 1x, /images/slider-grid/slide-mountain-desktop@2x.jpeg 2x" width="215" height="288">
-                    <source type="image/jpeg" media="(min-width: 834px)" srcset="/images/slider-grid/slide-mountain-tablet@1x.jpeg 1x, /images/slider-grid/slide-mountain-tablet@2x.jpeg 2x" width="180" height="240">
-                    <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x/@1x.jpeg" srcset="/images/slider-grid/slide-mountain-mobile@2x.jpeg 2x" width="107" height="146" alt="Picture cloud">
-                  </picture>
-                </div> -->
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-                <div class="swiper-slide">
-                  <img class="grid__img" src="/images/slider-grid/slide-mountain-mobile@1x.jpeg" alt="Picture cloud">
-                </div>
-              </div>
-            </div>
-            <div class="slider-grid__button-box slider-buttons">
-              <button class="slider-buttons__button grid-button-prev" type="button">
-                <span class="visually-hidden">Prev</span>
-              </button>
-              <button class="slider-buttons__button slider-buttons__button--next grid-button-next" type="button">
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </section>
+          
           <section class="features-four features">
             <h2 class="features__title content-title">Vestibulum vitae enim tellus</h2>
             <p class="features__description content-description">Mauris nec mi egestas, lacinia purus vitae, luctus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -400,7 +331,7 @@
           <section class="promo promo--money">
             <div class="promo__box">
               <h2 class="promo__title">Maecenas ex diameget eget</h2>
-              <a class="promo__button promo-button" href="#">Solosidi Sem</a>
+              <a class="promo-button" href="#">Solosidi Sem</a>
             </div>
             <div class="promo__decoration">
               <img class="promo__decoration-coins" src="/images/promo-money/coins-mobile@1x.png" alt="Coins" width="121" height="140">
@@ -417,11 +348,13 @@
               </div>
               <div class="reviews__sort">
                 <p>Quisque luctus</p>
-                <select name="" id="">
-                  <option value="">Nunc</option>
-                  <option value="">Popular</option>
-                  <option value="">New</option>
-                </select>
+                <div class="reviews__select-wrapper">
+                  <select name="" id="">
+                    <option value="">Nunc</option>
+                    <option value="">Popular</option>
+                    <option value="">New</option>
+                  </select>
+                </div>
               </div>
             </div>
             <ul class="reviews__list review">
@@ -438,8 +371,8 @@
                   </div>
                   <p class="review__content">Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a malesuada nisi, sed facilisis velit. Proin blandit facilisis purus, euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus. Sed sodales suscipit congue. Aenean ultrices non elit et eleifend. </p>
                   <div class="review__buttons">
-                    <button class="review__btn-like">hilfreich</button>
-                    <button class="review__btn-comment">Kommentar</button>
+                    <button class="review__btn-like" type="button">hilfreich</button>
+                    <button class="review__btn-comment" type="button">Kommentar</button>
                   </div>
                 </li>
                 <li class="review__item">

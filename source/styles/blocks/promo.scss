@@ -39,6 +39,7 @@
 
   &__box {
     margin: 0 12px 0 28px;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -136,10 +137,6 @@
       height: 100px;
       margin-left: -41px;
     }
-  }
-
-  &__button:hover {
-    opacity: 0.8;
   }
 }
 
@@ -338,7 +335,7 @@
   }
 
   .promo__subtitle {
-    margin: 0 40px 0 0;
+    margin: 0 34px 0 0;
   }
 }
 

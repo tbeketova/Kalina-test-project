@@ -10,8 +10,8 @@
 
   &__button {
     display: block;
-    width: 39px;
-    height: 39px;
+    max-width: 39px;
+    min-height: 39px;
     border-radius: 50%;
     background-color: transparent;
     border: none;

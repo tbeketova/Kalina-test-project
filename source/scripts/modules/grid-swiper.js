@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
+import { Grid, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 
-export function initGridSwiper() {
+/* export function initGridSwiper() {
   let gridSliderContainer = document.getElementById('img-slider');
   let gridSlider;
 
@@ -48,4 +49,23 @@ export function initGridSwiper() {
   }
   checkWindowSize();
   window.addEventListener('resize', checkWindowSize);
+} */
+
+export function initGrid() {
+  let swiper = new Swiper(".mySwiper", {
+    modules: [Grid, Pagination],
+    slidesPerView: 3,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+    /* navigation: {
+      prevEl: '.grid-button-prev',
+      nextEl: '.grid-button-next',
+    }, */
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 }

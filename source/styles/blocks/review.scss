@@ -91,6 +91,11 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     margin-right: 15px;
+
+    svg {
+      width: 42px;
+      height: 42px;
+    }
   }
 
   &__user-name {

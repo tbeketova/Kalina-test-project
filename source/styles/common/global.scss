@@ -61,6 +61,7 @@ img {
   max-width: 1830px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -133,6 +134,10 @@ img {
     inset 5px 5px 10px 3px rgba($basic-text, 0.5),
     0 4px 4px 0 rgba($black-color, 0.25);
   border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .visually-hidden {
